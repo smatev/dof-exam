@@ -24,7 +24,7 @@ spec:
         io.kompose.service: nginx-host
     spec:
       containers:
-      - image: nginx:latest
+      - image: svematev/k8s-nginx:%IMAGE-PLACEHOLDER%
         imagePullPolicy: ""
         name: nginx-host
         ports:
@@ -81,7 +81,7 @@ spec:
         io.kompose.service: php-host
     spec:
       containers:
-      - image: php:fpm
+      - image: svematev/k8s-php:%IMAGE-PLACEHOLDER%
         imagePullPolicy: ""
         name: php-host
         ports:
@@ -138,7 +138,7 @@ spec:
         io.kompose.service: redis-host
     spec:
       containers:
-      - image: redis:latest
+      - image: svematev/k8s-redis:%IMAGE-PLACEHOLDER%
         imagePullPolicy: ""
         name: redis-host
         resources: {}
